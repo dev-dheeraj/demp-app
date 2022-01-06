@@ -11,11 +11,10 @@ import weekAway from '../../../../assets/images/home/week-away.jpeg'
 import holidate from '../../../../assets/images/home/holidate.jpeg'
 import deep from '../../../../assets/images/home/deep.jpeg'
 import loveAj from '../../../../assets/images/home/love-aj-kal.jpeg'
-
 import home_1 from '../../../../assets/images/home/home_1.jpg'
 import ShowsCards from '../ShowsCards'
-
 import ShowsActionBtn from '../../../../components/common/ActionButton/ShowsActionBtn'
+
 const DiscoverShows = () => {
     return (
         <Carousel>

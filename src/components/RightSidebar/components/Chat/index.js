@@ -1,6 +1,5 @@
 import React from 'react'
 
-import crossRed from '../../../../assets/images/home/cross-red.png'
 import home_1 from '../../../../assets/images/home/home_1.jpg'
 import MessageNotify from '../../../common/MessageNotify'
 

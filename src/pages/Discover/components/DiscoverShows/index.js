@@ -45,7 +45,7 @@ const DiscoverShows = () => {
                         </div>
                         <div className="bg-success p-2 free-label text-white px-3 py-1 fw-bolder">Free</div>
                         <div className="p-2 play-icon text-white px-3 py-1 fw-bolder">
-                            <a href="javascript:void(0)" className="pointer">
+                            <a target = "_blank" href="https://www.youtube.com/watch?v=IkUS06dQVas" className="pointer">
                                 <img src={play} className="img-fluid" />
                             </a>
                         </div>
@@ -76,7 +76,7 @@ const DiscoverShows = () => {
                                                 <a href="#">
                                                     <img src={girl} className="img-fluid w-100 h-100 object-cover" />
                                                 </a>
-                                                <a href="#" className="bg-danger text-white t-d-n img-show-content font-16">
+                                                <a href="https://www.jiosaavn.com/album/atrangi-re/wuWvsFNoE6Q_" className="bg-danger text-white t-d-n img-show-content font-16">
                                                     The Girl On The Train
                                                 </a>
                                             </div>
@@ -91,7 +91,7 @@ const DiscoverShows = () => {
                                                     <ShowsCards url="https://www.jiosaavn.com/album/love-aaj-kal/08dQgBZGh20_" img={holidate} title={'holidate'} />
                                                 </div>
                                                 <div className="col-md-6">
-                                                    <ShowsCards url="https://www.jiosaavn.com/album/love-aaj-kal/08dQgBZGh20_" img={deep} title={'Deep'} />
+                                                    <ShowsCards url="https://www.jiosaavn.com/album/atrangi-re/wuWvsFNoE6Q_" img={deep} title={'Deep'} />
                                                 </div>
                                                 <div className="col-md-6">
                                                     <ShowsCards url="https://www.jiosaavn.com/album/love-aaj-kal/08dQgBZGh20_" img={loveAj} title={'Love aaj kal'} />

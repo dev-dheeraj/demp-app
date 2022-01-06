@@ -20,8 +20,9 @@ const VideoContainer = (
         <div>
             <div className="">
                 {/* <img src={profileImg} className="img-fluid" /> */}
-                {/* render you tube i frame */}
+                {/* render youtube videos */}
                 <iframe
+                width={"100%"}
                     src={url}
                     title={title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

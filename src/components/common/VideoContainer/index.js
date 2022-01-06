@@ -12,13 +12,21 @@ const VideoContainer = (
         addImg,
         commentImg,
         shareImg,
-        promoteImg
+        promoteImg,
+        url
     }) => {
 
     return (
         <div>
             <div className="">
-                <img src={profileImg} className="img-fluid" />
+                {/* <img src={profileImg} className="img-fluid" /> */}
+                {/* render you tube i frame */}
+                <iframe
+                    src={url}
+                    title={title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                >
+                </iframe>
             </div>
             <div className="p-2 bg-white border">
                 <h5 className="font-18 mb-1">{title}</h5>
@@ -32,7 +40,6 @@ const VideoContainer = (
                     </div>
                     <div><button type="button" className="btn btn-purple">{button}</button></div>
                 </div>
-
                 <div className="d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center">
                         {/* Show action buttons */}

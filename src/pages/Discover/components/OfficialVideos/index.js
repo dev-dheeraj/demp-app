@@ -20,7 +20,23 @@ const OfficialVideos = () => {
                 margin={18}
             >
                 {/* render video containers */}
+
                 <VideoContainer
+                    profileImg={home_1}
+                    title={"Flight From Shadow (fan film)..."}
+                    views={"4,147,102 views"}
+                    date={"Dec 2, 2021"}
+                    description={"McGrew Studios"}
+                    button={'Follow'}
+                    likeImg={like}
+                    addImg={add}
+                    commentImg={comment}
+                    shareImg={share}
+                    promoteImg={promote}
+                    url={'https://www.youtube.com/embed/ddkZevbhc5o'}
+                />
+                <VideoContainer
+                    url={'https://www.youtube.com/embed/HeibOX7IOOM'}
                     profileImg={home_1}
                     title={"Flight From Shadow (fan film)..."}
                     views={"4,147,102 views"}
@@ -34,6 +50,7 @@ const OfficialVideos = () => {
                     promoteImg={promote}
                 />
                 <VideoContainer
+                    url={'https://www.youtube.com/embed/ddkZevbhc5o'}
                     profileImg={home_1}
                     title={"Flight From Shadow (fan film)..."}
                     views={"4,147,102 views"}
@@ -47,19 +64,7 @@ const OfficialVideos = () => {
                     promoteImg={promote}
                 />
                 <VideoContainer
-                    profileImg={home_1}
-                    title={"Flight From Shadow (fan film)..."}
-                    views={"4,147,102 views"}
-                    date={"Dec 2, 2021"}
-                    description={"McGrew Studios"}
-                    button={'Follow'}
-                    likeImg={like}
-                    addImg={add}
-                    commentImg={comment}
-                    shareImg={share}
-                    promoteImg={promote}
-                />
-                <VideoContainer
+                    url={'https://www.youtube.com/embed/HeibOX7IOOM'}
                     profileImg={home_1}
                     title={"Flight From Shadow (fan film)..."}
                     views={"4,147,102 views"}

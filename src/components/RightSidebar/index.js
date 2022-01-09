@@ -7,6 +7,7 @@ import caretDown from '../../assets/images/home/caret-down.png'
 import message from '../../assets/images/home/message.png'
 import ProfileInfo from './components/Profile'
 import Chat from './components/Chat'
+import { Image } from 'react-bootstrap'
 
 const RightSidebar = (props) => {
     return (
@@ -20,7 +21,7 @@ const RightSidebar = (props) => {
                 <div className="d-flex align-items-center">
                     <div className="wh-15 mr-10">
                         <a href="#">
-                            <img src={message} className="img-fluid" />
+                            <Image src={message} className="img-fluid" />
                         </a>
                     </div>
                     <h6 className="font-14 text-danger mb-0">Messages</h6>
@@ -28,12 +29,12 @@ const RightSidebar = (props) => {
                 <div className="d-flex align-items-center">
                     <div className="wh-15">
                         <a href="#">
-                            <img src={search} className="img-fluid" />
+                            <Image src={search} className="img-fluid" />
                         </a>
                     </div>
                     <div className="wh-35">
                         <a href="#">
-                            <img src={caretDown} className="img-fluid" />
+                            <Image src={caretDown} className="img-fluid" />
                         </a>
                     </div>
                 </div>

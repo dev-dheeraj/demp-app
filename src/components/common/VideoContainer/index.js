@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button, Image } from 'react-bootstrap'
 import ActionButton from '../ActionButton'
 
 const VideoContainer = (
@@ -19,10 +20,10 @@ const VideoContainer = (
     return (
         <div>
             <div className="">
-                {/* <img src={profileImg} className="img-fluid" /> */}
+                {/* <Image src={profileImg} className="img-fluid" /> */}
                 {/* render youtube videos */}
                 <iframe
-                width={"100%"}
+                    width={"100%"}
                     src={url}
                     title={title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -35,11 +36,13 @@ const VideoContainer = (
                 <div className="d-flex align-items-center justify-content-between mb-2">
                     <div className="d-flex align-items-center">
                         <div className="wh-45 bg-dark rounded-pill overflow-hidden user-image">
-                            <img src={profileImg} className="img-fluid" />
+                            <Image src={profileImg} className="img-fluid" />
                         </div>
                         <h5 className="font-12 mb-0 pl-10">{description}</h5>
                     </div>
-                    <div><button type="button" className="btn btn-purple">{button}</button></div>
+                    <div>
+                        <Button type="button" className="btn btn-purple">{button}</Button>
+                    </div>
                 </div>
                 <div className="d-flex align-items-center justify-content-between">
                     <div className="d-flex align-items-center">
@@ -52,7 +55,7 @@ const VideoContainer = (
                     <div>
                         <div className="wh-45 d-flex align-items-center justify-content-between">
                             <a href="javascript:void(0)">
-                                <img src={addImg} className="img-fluid" width="45" height="45" />
+                                <Image src={addImg} className="img-fluid" width="45" height="45" />
                             </a>
                         </div>
                     </div>

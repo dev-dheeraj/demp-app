@@ -1,4 +1,5 @@
 import React from 'react'
+import { Image } from 'react-bootstrap'
 import home_1 from '../../../../assets/images/home/home_1.jpg'
 
 const ProfileInfo = () => {
@@ -18,7 +19,7 @@ const ProfileInfo = () => {
                 <h6 className="font-12 text-dark mb-0 mr-5">Hi</h6>
                 <h6 className="font-14  mb-0 fw-bolder mr-10">Online</h6>
                 <div className="wh-45 bg-dark rounded-pill overflow-hidden user-image">
-                    <img src={home_1} alt="dsd" className="img-fluid h-100 object-cover" />
+                    <Image src={home_1} alt="dsd" className="img-fluid h-100 object-cover" />
                 </div>
             </div>
         </div>

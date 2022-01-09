@@ -1,6 +1,7 @@
 import React from 'react'
+import { Accordion, Image } from 'react-bootstrap'
 import logo from './../../assets/images/logoimg/logo.gif'
-import ServiceSection from './component'
+import ServiceSection from './component/ServiceSection'
 
 const Sidebar = (props) => {
     return (
@@ -8,10 +9,12 @@ const Sidebar = (props) => {
             {/* logo section on right side header */}
             <div className="brand-logo">
                 <a href="#">
-                    <img src={logo} className="img-fluid" />
+                    <Image src={logo} className="img-fluid" />
                 </a>
             </div>
             {/* sidebar constants  */}
+
+
             <div className="menu">
                 <ul className="listing-menu m-0 p-0 pl-78 pt-20">
                     <li>
@@ -19,17 +22,23 @@ const Sidebar = (props) => {
                             <span className="material-icons icons_side_nav mr-5">home</span>Home
                         </a>
                     </li>
-                    <li>
-                        <a href="#" className="d-flex" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
-                            <span className="material-icons icons_side_nav mr-5">visibility</span> Discover
-                        </a>
-                        <ul id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample" style={{ "paddingLeft": "10px" }}>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">Shows</a></li>
-                            <li><a href="#">Watchlist</a></li>
-                            <li><a href="#">Subscription</a></li>
-                        </ul>
-                    </li>
+
+                    <Accordion flush as={'li'}>
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header >
+                                <a href="#" className="d-flex">
+                                    <span className="material-icons icons_side_nav mr-5">visibility</span> Discover
+                                </a>
+                            </Accordion.Header>
+                            <Accordion.Body as={"ul"}>
+                                <li><a href="#">Movies</a></li>
+                                <li><a href="#">Shows</a></li>
+                                <li><a href="#">Watchlist</a></li>
+                                <li><a href="#">Subscription</a></li>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
+
                     <li>
                         <a href="#" className="d-flex">
                             <span className="material-icons icons_side_nav mr-5">grade</span> Rewards

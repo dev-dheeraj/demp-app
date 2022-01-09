@@ -1,4 +1,5 @@
 import React from 'react'
+import { Image } from 'react-bootstrap'
 import crossRed from '../../../assets/images/home/cross-red.png'
 
 const MessageNotify = ({ name, time, img, message }) => {
@@ -6,7 +7,7 @@ const MessageNotify = ({ name, time, img, message }) => {
         <div className="bg-white d-flex align-items-center justify-content-between chat-user-listing">
         <div className="d-flex position-relative">
             <div className="wh-55 bg-dark rounded-pill overflow-hidden user-image">
-                <img src={img} className="img-fluid" />
+                <Image src={img} className="img-fluid" />
             </div>
             <div className="online-tic"></div>
             <div className="pl-10 pt-2">
@@ -20,7 +21,7 @@ const MessageNotify = ({ name, time, img, message }) => {
             </div>
             <div className="wh-20">
                 <a href="#">
-                    <img src={crossRed} className="img-fluid" />
+                    <Image src={crossRed} className="img-fluid" />
                 </a>
             </div>
         </div>

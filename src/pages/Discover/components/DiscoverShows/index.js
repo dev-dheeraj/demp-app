@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel } from 'react-bootstrap'
+import { Button, Carousel, Image } from 'react-bootstrap'
 import prime from '../../../../assets/images/home/prime.png'
 import plus from '../../../../assets/images/home/plus.png'
 import cross from '../../../../assets/images/home/cross.png'
@@ -26,8 +26,8 @@ const DiscoverShows = () => {
                             <h5 className="text-blue text-uppercase">Drama, Fantasy, Adventure, 2021</h5>
                             <h4 className="text-white fw-bolder mb-20">7/10</h4>
                             <div className="mb-3">
-                                <button type="button" className="btn btn-danger mr-10">Based on novel or book</button>
-                                <button type="button" className="btn btn-danger mr-10">adaptation</button>
+                                <Button type="button" className="btn btn-danger mr-10">Based on novel or book</Button>
+                                <Button type="button" className="btn btn-danger mr-10">adaptation</Button>
                             </div>
                             <p className="text-white mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -45,8 +45,8 @@ const DiscoverShows = () => {
                         </div>
                         <div className="bg-success p-2 free-label text-white px-3 py-1 fw-bolder">Free</div>
                         <div className="p-2 play-icon text-white px-3 py-1 fw-bolder">
-                            <a target = "_blank" href="https://www.youtube.com/watch?v=IkUS06dQVas" className="pointer">
-                                <img src={play} className="img-fluid" />
+                            <a target="_blank" href="https://www.youtube.com/watch?v=IkUS06dQVas" className="pointer">
+                                <Image src={play} className="img-fluid" />
                             </a>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const DiscoverShows = () => {
                                 <div className="col-md-3">
                                     <div className="d-flex align-items-center justify-content-center h-100">
                                         <div className="wh-75 border border-white rounded-pill overflow-hidden user-image">
-                                            <img src={home_1} className="img-fluid h-100 object-cover" />
+                                            <Image src={home_1} className="img-fluid h-100 object-cover" />
                                         </div>
                                         <div className="pl-10">
                                             <h3 className="font-26 mb-1 text-white">Quinn</h3>
@@ -74,7 +74,7 @@ const DiscoverShows = () => {
                                         <div className="col-md-6">
                                             <div className="bg-success bg-img-show position-relative">
                                                 <a href="#">
-                                                    <img src={girl} className="img-fluid w-100 h-100 object-cover" />
+                                                    <Image src={girl} className="img-fluid w-100 h-100 object-cover" />
                                                 </a>
                                                 <a href="https://www.jiosaavn.com/album/atrangi-re/wuWvsFNoE6Q_" className="bg-danger text-white t-d-n img-show-content font-16">
                                                     The Girl On The Train

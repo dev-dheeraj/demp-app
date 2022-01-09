@@ -1,21 +1,21 @@
 import React from 'react'
 import { Button, Carousel, Image } from 'react-bootstrap'
-import prime from '../../../../assets/images/home/prime.png'
-import plus from '../../../../assets/images/home/plus.png'
-import cross from '../../../../assets/images/home/cross.png'
-import rock from '../../../../assets/images/home/rock.png'
-import info from '../../../../assets/images/home/info.png'
-import play from '../../../../assets/images/home/play.png'
-import girl from '../../../../assets/images/home/the-girl.jpeg'
-import weekAway from '../../../../assets/images/home/week-away.jpeg'
-import holidate from '../../../../assets/images/home/holidate.jpeg'
-import deep from '../../../../assets/images/home/deep.jpeg'
-import loveAj from '../../../../assets/images/home/love-aj-kal.jpeg'
-import home_1 from '../../../../assets/images/home/home_1.jpg'
+import prime from '../../../../../assets/images/home/prime.png'
+import plus from '../../../../../assets/images/home/plus.png'
+import cross from '../../../../../assets/images/home/cross.png'
+import rock from '../../../../../assets/images/home/rock.png'
+import info from '../../../../../assets/images/home/info.png'
+import play from '../../../../../assets/images/home/play.png'
+import girl from '../../../../../assets/images/home/the-girl.jpeg'
+import weekAway from '../../../../../assets/images/home/week-away.jpeg'
+import holidate from '../../../../../assets/images/home/holidate.jpeg'
+import deep from '../../../../../assets/images/home/deep.jpeg'
+import loveAj from '../../../../../assets/images/home/love-aj-kal.jpeg'
+import home_1 from '../../../../../assets/images/home/home_1.jpg'
 import ShowsCards from '../ShowsCards'
-import ShowsActionBtn from '../../../../components/common/ActionButton/ShowsActionBtn'
+import ShowsActionBtn from '../../../../../components/common/ActionButton/ShowsActionBtn'
 
-const DiscoverShows = () => {
+const ShowsSlider = () => {
     return (
         <Carousel>
             <Carousel.Item>
@@ -109,4 +109,4 @@ const DiscoverShows = () => {
     )
 }
 
-export default DiscoverShows
+export default ShowsSlider

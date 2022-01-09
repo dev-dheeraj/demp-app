@@ -1,12 +1,12 @@
 import React from 'react'
 
-import home_1 from '../../../../assets/images/home/home_1.jpg'
-import share from '../../../../assets/images/home/share.png'
-import like from '../../../../assets/images/home/like.png'
-import comment from '../../../../assets/images/home/comment.png'
-import promote from '../../../../assets/images/home/promote.png'
-import add from '../../../../assets/images/home/add.png'
-import VideoContainer from '../../../../components/common/VideoContainer'
+import home_1 from '../../../../../assets/images/home/home_1.jpg'
+import share from '../../../../../assets/images/home/share.png'
+import like from '../../../../../assets/images/home/like.png'
+import comment from '../../../../../assets/images/home/comment.png'
+import promote from '../../../../../assets/images/home/promote.png'
+import add from '../../../../../assets/images/home/add.png'
+import VideoContainer from '../../../../../components/common/VideoContainer'
 import OwlCarousel from 'react-owl-carousel';
 
 const OfficialVideos = () => {

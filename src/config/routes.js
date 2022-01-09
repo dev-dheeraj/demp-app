@@ -1,14 +1,14 @@
-import Discover from "../pages/Discover";
+import DiscoverShows from "../pages/Discover/DiscoverShows";
 
 export const ALL_ROUTES = [
     {
         exact: true,
         path: '/',
-        component: Discover,
+        component: DiscoverShows,
     },
     {
         exact: true,
         path: '/shows',
-        component: Discover,
+        component: DiscoverShows,
     }
 ]

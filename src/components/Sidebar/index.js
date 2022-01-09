@@ -1,5 +1,6 @@
 import React from 'react'
-import { Accordion, Image } from 'react-bootstrap'
+import { Accordion, Image, Nav, NavDropdown } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 import logo from './../../assets/images/logoimg/logo.gif'
 import ServiceSection from './component/ServiceSection'
 
@@ -18,9 +19,9 @@ const Sidebar = (props) => {
             <div className="menu">
                 <ul className="listing-menu m-0 p-0 pl-78 pt-20">
                     <li>
-                        <a href="#" className="d-flex">
+                        <NavLink className="d-flex" to="/home">
                             <span className="material-icons icons_side_nav mr-5">home</span>Home
-                        </a>
+                        </NavLink>
                     </li>
 
                     <Accordion flush as={'li'}>
@@ -31,33 +32,34 @@ const Sidebar = (props) => {
                                 </a>
                             </Accordion.Header>
                             <Accordion.Body as={"ul"}>
-                                <li><a href="#">Movies</a></li>
-                                <li><a href="#">Shows</a></li>
-                                <li><a href="#">Watchlist</a></li>
-                                <li><a href="#">Subscription</a></li>
+                                <NavLink className="nav-link" to="/movies">Movies</NavLink>
+                                <NavLink className="nav-link" to="/shows">Shows</NavLink>
+                                <NavLink className="nav-link" to="/wathlist">Watchlist</NavLink>
+                                <NavLink className="nav-link" to="/subscription">Subscription</NavLink>
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
 
                     <li>
-                        <a href="#" className="d-flex">
+                        <NavLink className="d-flex" to="/rewards">
                             <span className="material-icons icons_side_nav mr-5">grade</span> Rewards
-                        </a>
+                        </NavLink>
+
                     </li>
                     <li>
-                        <a href="#" className="d-flex">
+                        <NavLink className="d-flex" to="/Setting">
                             <span className="material-icons icons_side_nav mr-5">settings</span> Setting
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="d-flex">
+                        <NavLink className="d-flex" to="/Promotions">
                             <span className="material-icons icons_side_nav mr-5">flight_land</span> Promotions
-                        </a>
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#" className="d-flex">
+                        <NavLink className="d-flex" to="/logout">
                             <span className="material-icons icons_side_nav mr-5">logout</span> Logout
-                        </a>
+                        </NavLink>
                     </li>
                 </ul>
             </div>

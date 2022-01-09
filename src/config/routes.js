@@ -8,7 +8,7 @@ export const ALL_ROUTES = [
     },
     {
         exact: true,
-        path: '/discover',
+        path: '/shows',
         component: Discover,
     }
 ]
